@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import Map from '../Contact/Map.js'
+import MapContainer from '../Contact/MapContainer.js'
 
 class Contact extends Component{
   render() {
     return(
       <div>
-        <Map />
+        <MapContainer />
         <h3>will need address, telephone, hours of operation, links to facebook, instagram, etc</h3>
       </div>
     )
