@@ -5,13 +5,10 @@
   background-image: url('https://www.desktopbackground.org/download/o/2012/09/22/456698_banana-leaf-wallpapers-design-martinique-for-the-beverly-hills_3603x2161_h.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100%;
+  overflow: auto;
 
   color: orange;
 }
-
-
 
 .link {
   color: orange;

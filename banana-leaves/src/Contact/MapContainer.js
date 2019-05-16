@@ -2,7 +2,6 @@ import React from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import '../Contact/Map.css';
 
-
 export class MapContainer extends React.Component {
 
   constructor(props) {
@@ -11,9 +10,10 @@ export class MapContainer extends React.Component {
       center: {
         lat: 38.914530,
         lng: -77.045600
-      },
+      }
     };
   }
+
 
   render() {
 
@@ -21,9 +21,15 @@ export class MapContainer extends React.Component {
       <div className='Map'>
         <Map
           google={this.props.google}
-          zoom={15}
+          zoom={18}
           initialCenter={this.state.center}
+        >
+        <Marker
+          position={this.state.center}
+          icon='https://gif-avatars.com/img/100x100/dancing-banana.gif'
+          className="Marker"
         />
+        </Map>
       </div>
     )
   }
