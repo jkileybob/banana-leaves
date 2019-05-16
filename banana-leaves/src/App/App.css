@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  font-family: 'Handlee', cursive;
+
+  background-image: url('https://www.desktopbackground.org/download/o/2012/09/22/456698_banana-leaf-wallpapers-design-martinique-for-the-beverly-hills_3603x2161_h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+
+  color: orange;
+}
+
+
+
+.link {
+  color: orange;
+}
+/* .link:hover {
+  -webkit-filter: drop-shadow(8px 8px 10px #FF00FF);
+  filter: drop-shadow(8px 8px 10px #FF00FF)
+} */
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
