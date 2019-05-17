@@ -15,6 +15,12 @@ class Contact extends Component{
     };
   }
 
+  componentDidMount(){
+    let mapDiv = document.querySelector("#root > div > div.AppContainer > div > div.Map > div")
+    mapDiv.style = "height: 35%; width: 50%; position: absolute;"
+    console.log(mapDiv)
+  }
+
   render() {
     return(
       <div className="Map">
