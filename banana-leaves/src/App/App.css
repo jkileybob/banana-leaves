@@ -1,4 +1,5 @@
 .App {
+  /* display: grid; */
   text-align: center;
   font-family: 'Handlee', cursive;
 
@@ -6,10 +7,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   color: orange;
 }
 
+.AppContainer {
+  /* background-color: blue; */
+  margin: 0px 150px 0px 150px;
+  padding: 5px 0px 5px 0px;
+  height: 100%
+}
+
+/* Shared Navbar and Footer Attributes */
 .link {
   color: orange;
 }
@@ -17,13 +31,3 @@
   -webkit-filter: drop-shadow(8px 8px 10px #FF00FF);
   filter: drop-shadow(8px 8px 10px #FF00FF)
 } */
-
-.Footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-}

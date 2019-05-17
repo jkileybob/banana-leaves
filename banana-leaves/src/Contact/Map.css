@@ -1,20 +1,3 @@
-.MapContainer {
-display: inline-block;
-margin-left: 500px;
-margin-right: 100px;
-margin-top: 500px;
-margin-bottom: 100px;
-}
-
 .Map {
-  display: inline-block;
-  position: absolute;
-  width: 35%;
-  height: 35%;
-}
 
-/*
-.Marker {
-  width: 20%;
-  height: 20%;
-} */
+}
