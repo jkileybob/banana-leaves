@@ -1,0 +1,22 @@
+
+.contact-info {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#mapDiv {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  width: 50%;
+}
+
+#contact-text {
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+  justify-content: center;
+}

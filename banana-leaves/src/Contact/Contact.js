@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-import '../Contact/Map.css';
+import '../Contact/Contact.css';
 
 class Contact extends Component{
 
@@ -15,15 +15,19 @@ class Contact extends Component{
     };
   }
 
+  // cDM finds map div ele relative to css positioning
+  // in browser and sets to variable that adjusts styling
+  // if css is adjusted, querySelector path must also be adjusted
   componentDidMount(){
-    let mapDiv = document.querySelector("#root > div > div.AppContainer > div > div.Map > div")
-    mapDiv.style = "height: 35%; width: 50%; position: absolute;"
-    console.log(mapDiv)
+    let mapDiv = document.querySelector("#root > div > div.AppContainer > div > div.contact-info > div")
+    mapDiv.style = "align-self: center; position: fixed; z-index: -1;"
+    mapDiv.id = 'mapDiv'
+    // console.log(mapDiv)
   }
 
   render() {
     return(
-      <div className="Map">
+      <div className="contact-info">
         <Map
           google={this.props.google}
           zoom={18}
@@ -35,8 +39,21 @@ class Contact extends Component{
           className="Marker"
         />
         </Map>
-        <h3>will need address, telephone, hours of operation, links to facebook, instagram, etc</h3>
-      </div>
+        <div id="contact-text">
+          <div className="address">
+            <h3 id="address">will need address</h3>
+          </div>
+          <div className="telephone">
+            <h3 id="telephone">will need telephone</h3>
+          </div>
+          <div className="hours-operation">
+            <h3 id="hours-operation">will need hours of operation</h3>
+          </div>
+          <div className="social-media">
+            <h3 id="social-media>">will need links to facebook, instagram, etc</h3>
+          </div>
+        </div>
+    </div>
     )
   }
 }

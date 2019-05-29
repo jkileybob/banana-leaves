@@ -6,7 +6,7 @@ import Navbar from '../NavBar/navbar.js'
 import '../NavBar/navbar.css';
 import Footer from '../Footer/Footer.js'
 import '../Footer/footer.css';
-import '../Contact/Map.css';
+import '../Contact/Contact.css';
 
 
 class App extends React.Component {
@@ -14,9 +14,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" />
-        <Navbar />
-        <AppContainer />
-        <Footer />
+        <Navbar
+          className="navbar"
+           />
+        <AppContainer
+          className="app-container"
+         />
+        <Footer
+          className="footer"
+           />
       </div>
     );
   }
