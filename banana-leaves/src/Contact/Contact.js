@@ -19,6 +19,10 @@ class Contact extends Component{
   // in browser and sets to variable that adjusts styling
   // if css is adjusted, querySelector path must also be adjusted
   componentDidMount(){
+    let outerDiv = document.querySelector("#root > div > div.AppContainer > div")
+    outerDiv.className = "outer-div"
+    outerDiv.style = "position: relative;"
+
     let mapDiv = document.querySelector("#root > div > div.AppContainer > div > div.contact-info > div")
     mapDiv.style = "align-self: center; position: fixed; z-index: -1;"
     mapDiv.id = 'mapDiv'
@@ -29,15 +33,16 @@ class Contact extends Component{
     return(
       <div className="contact-info">
         <Map
+          className='map'
           google={this.props.google}
           zoom={18}
           initialCenter={this.state.center}
         >
-        <Marker
-          position={this.state.center}
-          icon='https://gif-avatars.com/img/100x100/dancing-banana.gif'
-          className="Marker"
-        />
+          <Marker
+            position={this.state.center}
+            icon='https://gif-avatars.com/img/100x100/dancing-banana.gif'
+            className="Marker"
+          />
         </Map>
         <div id="contact-text">
           <div className="address">
